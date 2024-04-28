@@ -147,7 +147,7 @@ header{
   animation: slide-animation-02 24s infinite;
 }
 .img-03 {
-  background-image: url("kaigi2");
+  background-image: url("kaigi2.jpg");
   animation: slide-animation-03 24s infinite;
 }
 @keyframes slide-animation-01 {
