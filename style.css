@@ -107,14 +107,13 @@ header{
   margin-right: 215px;
 }
 
-
 .img-frame {
   position: relative;
   z-index: 0;
-  background-image: url(akusyu3.jpg);
+  background-image: url(akusyu5.jpg);
   background-size: cover;
   object-fit: cover;
-  clip-path: polygon(60% 0, 100% 0, 40% 100%, 0 100%);
+  clip-path: polygon(35% 0, 100% 0, 100% 100%, 35% 100%, 13% 50%);
   top: 150px;
   left: 700px;
   width: 65%;
@@ -128,14 +127,14 @@ header{
   width: 65%;
   height: 800px;
   background-color: #e4e4ee;
-  clip-path: polygon(60% 0, 100% 0, 40% 100%, 0 100%);
+  clip-path: polygon(27% 0, 83% 0, 83% 100%, 27% 100%, 5% 50%);
 }
 .imagine2 {
   position: absolute;
   z-index: -2;
   width: 100%;
   height: 400px;
-  top: 555px;
+  top: 550px;
   background-color: #f7f7f7;
 }
 .text p {
@@ -158,7 +157,7 @@ header{
 }
 .text3 {
   bottom: 385px;
-  left: 620px;
+  left: 555px;
   font-size: 40px;
 }
 .text4 {
