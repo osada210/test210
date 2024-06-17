@@ -110,14 +110,23 @@ header{
 .img-frame {
   position: relative;
   z-index: 0;
-  background-image: url(akusyu5.jpg);
+  background-image: url(akusyu6.jpg);
   background-size: cover;
-  object-fit: cover;
   clip-path: polygon(35% 0, 100% 0, 100% 100%, 35% 100%, 13% 50%);
   top: 150px;
   left: 700px;
   width: 65%;
   height: 800px;
+
+}
+.img-frame::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(185, 185, 185, 0.5);
 }
 .imagine {
   position: absolute;
@@ -181,31 +190,6 @@ header{
   position: relative;
 }
 
-/* .main::before {
-  content: '';
-  position: absolute;
-  transform: rotate(-35deg);
-  width: 130px;
-  height: 60px;
-  background-color: #ffffff;
-  z-index: 1;
-  top: 245px;
-  left: 356px;
-  border-bottom: 1px solid #aaa;
-}
-
-.main::after {
-  content: '';
-  position: absolute;
-  transform: rotate(-35deg);
-  width: 100px;
-  height: 40px;
-  background-color: #ffffff;
-  z-index: 1;
-  bottom: -452px;
-  right: 345px;
-  border-top: 1px solid #aaa;
-} */
 .m {
   transform: rotate(0.05deg);
   font-family: "Zen Kaku Gothic Antique", sans-serif;
