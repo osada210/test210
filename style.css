@@ -1,414 +1,399 @@
-@charset "UTF-8";
-body {
-  background-color: #fff;
-  overflow-x: hidden;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700;900&family=Sora:wght@400;700&display=swap");
 
-header{
-  position: fixed;
-  top: 0;
-  width: 100%; 
-  height: 186px;
-  z-index: 1000; 
-  background-color: #fff;
+:root {
+  --primary: #0d6efd;
+  --dark: #21252f;
+  --body: #888;
+  /* --orange: rgb(221, 155, 94); */
+  --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
-  font-family: "Klee One", cursive;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 33px;
-  color: #000080;
-  position: relative;
-  top: 20px;
-  left: 215px;
-}
-.logo-e {
-  font-family: "Zen Kaku Gothic Antique", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
-  color: #707070;
-  position: relative;
-  top: 28px;
-  left: 300px;
-}
-
-.ns {
-  position: relative;
-  bottom: 45px;
-  left: 1470px;
-  font-size: 13px;
-  color: #444444;
-}
-.ptext {
-  position: relative;
-  top: 1px;
-  left: 1290px;
-  font-size: 14px;
-  color: #838383;
-  transform: rotate(0.05deg);
-  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-family: "Zen Kaku Gothic New", serif;
   font-weight: 400;
   font-style: normal;
 }
-.number {
-  position: relative;
-  bottom: 35px;
-  left: 1470px;
-  font-size: 28px;
-  color: #444444;
+
+.marker {
+  text-decoration: underline;
+  text-underline-offset: -0.05em;
+  text-decoration-thickness: 0.3em;
+  text-decoration-color: rgba(221, 221, 221, 0.4);
+  text-decoration-skip-ink: none;
 }
-.fa-phone {
-  position: relative;
-  bottom: 60px;
-  left: 1445px;
-  font-size: 20px;
-  color: #444444;
+.home-t {
+  font-family: "Noto Serif JP", serif;;
+  color: #ffffff;
+  margin-bottom: 8rem;
+}
+.text0 {
+  display: flex;
+  align-items: first baseline;
+}
+.text1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.text2 {
+  font-size: 4.5em;
+  margin: 0;
+}
+.text3 {
+  font-size: 3rem;
+}
+.text4 {
+  font-size: 1rem;
+}
+.text5 {
+  font-size: 1rem;
 }
 
-.nv a {
-  transform: rotate(0.05deg);
-  font-family: "Zen Kaku Gothic Antique", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  color: #444444;
-  font-size: 17px;
+@media (max-width: 768px) {
+  .home-t {
+      text-align: center;
+  }
+
+  .text0 {
+    font-size: 2em;
+    margin: 0.5em 0;
+    text-align: center;
+    display: block;
+  }
+
+  .text1 {
+    display: none;
+  }
+
+  .text2 {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+  }
+
+  .text3 {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+  }
+
+  .text4 {
+    font-size: 1.0em;
+    margin: 0.5em 0;
+  }
+
+  .text5 {
+    font-size: 1.0em;
+    margin: 0.5em 0;
+  }
+
+  .hero {
+    overflow: hidden;
+  }
+
+  .content4 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .youhei, .youko {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .youko {
+    margin-left: 0 !important;
+  }
+  
+  .blog-card {
+    margin-left: 3%;
+  }
+
+  .map {
+    width: 100%;
+  }
+
+}
+
+body {
+  font-family: Sora, "sans-serif";
+  line-height: 1.7;
+  color: var(--body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.display-4 {
+  color: var(--dark);
+  font-weight: 700;
+}
+
+a {
+  color: var(--dark);
   text-decoration: none;
-  position: relative;
-  bottom: 7px;
-  left: 310px;
 }
 
-.nv a::after {
-  content: '';
-  width: 240px;
-  height: 2px;
-  display: inline-block;
-  background-color: #1a1919;
-  position: absolute;
-  bottom: -20px;
-  left: calc(50% - 120px)
-}
-.nv a:hover{
-  color: #000080;
+img {
+  width: 100%;
 }
 
-.top {
-  margin-right: 240px;
-}
-.access {
-  margin-right: 225px;
-}
-.overview {
-  margin-right: 225px;
-}
-.news {
-  margin-right: 215px;
+.navbar {
+  box-shadow: var(--box-shadow);
 }
 
-.img-frame {
-  position: relative;
-  z-index: 0;
-  background-image: url(akusyu6.jpg);
+.logo {
+  width: 160px;
+}
+
+.navbar .nav-link {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.navbar .nav-link {
+  color: #000000 !important;
+}
+
+.btn {
+  padding: 14px 18px;
+  border-width: 2px;
+  border-radius: 0;
+}
+
+.hero {
+  background-image: url(backk.jpg);
+  background-position: center;
   background-size: cover;
-  clip-path: polygon(35% 0, 100% 0, 100% 100%, 35% 100%, 13% 50%);
-  top: 150px;
-  left: 700px;
-  width: 65%;
-  height: 800px;
-
+  background-attachment: fixed;
+  position: relative;
+  z-index: 2;
 }
-.img-frame::after{
-  content: '';
+
+.hero::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(80, 80, 80, 0.7);
+  z-index: -1;
+}
+
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.content1 {
+  position: relative;
+  z-index: 2;
+}
+
+.content2 {
+  position: relative;
+  z-index: 2;
+}
+
+.content4 {
+  display: flex;
+  justify-content: center;
+}
+.youko {
+  margin-left: 2rem;
+}
+.card1 {
+  position: relative;
+}
+
+.card1::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(zimusyo2.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: 10;
+}
+
+.card2 {
+  position: relative;
+}
+
+.card2::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(bill.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: 10;
+}
+
+
+.card3 {
+  position: relative;
+}
+
+.card3::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(name1.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: 10;
+}
+
+.card-effect {
+  box-shadow: var(--box-shadow);
+  background-color: #fff;
+  padding: 25px;
+  transition: all 0.35s ease;
+}
+
+.card-effect:hover {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+
+
+.service {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+.service::after {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background-color: var(--primary);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.service:hover h5,
+.service:hover p {
+  color: white;
+}
+
+.service:hover .iconbox {
+  background-color: #fff;
+  color: var(--primary);
+}
+
+.service:hover::after {
+  opacity: 1;
+  top: 0;
+}
+
+/* features section */
+.col-img {
+  background-image: url(/img/cover2.jpg);
+  background-position: center;
+  background-size: cover; /* 画像の全部を収めることができる。 */
+  min-height: 500px;
+}
+
+.project {
+  position: relative;
+  overflow: hidden;
+}
+
+.project .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(185, 185, 185, 0.5);
-}
-.imagine {
-  position: absolute;
-  z-index: -1;
-  top: 150px;
-  left: 760px;
-  width: 65%;
-  height: 800px;
-  background-color: #e4e4ee;
-  clip-path: polygon(27% 0, 83% 0, 83% 100%, 27% 100%, 5% 50%);
-}
-.imagine2 {
-  position: absolute;
-  z-index: -2;
-  width: 100%;
-  height: 400px;
-  top: 550px;
-  background-color: #f7f7f7;
-}
-.text p {
-  z-index: 1;
-  font-family: "Noto Serif JP", serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #000000;
-  position: absolute;
-}
-.text1 {
-  bottom: 468px;
-  left: 210px;
-  font-size: 40px;
-}
-.text2 {
-  bottom: 385px;
-  left: 200px;
-  font-size: 69px;
-}
-.text3 {
-  bottom: 385px;
-  left: 555px;
-  font-size: 40px;
-}
-.text4 {
-  bottom: 340px;
-  left: 210px;
-  font-size: 16px;
-}
-.text5 {
-  bottom: 313px;
-  left: 210px;
-  font-size: 16px;
-}
-.o {
-  object-fit: cover;
-  top: 490px;
-  width: 400px;
-  height: 280px;
-
-}
-.main {
-  position: relative;
+  background-color: rgba(37, 39, 71, 0.7);
+  padding: 30px;
+  display: flex;
+  align-items: flex-end;
+  transition: all 0.4s ease;
+  opacity: 0;
 }
 
-.m {
-  transform: rotate(0.05deg);
-  font-family: "Zen Kaku Gothic Antique", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 18px;
+.project img {
+  transition: all 0.4s ease;
 }
-.n {
-  transform: rotate(0.05deg);
-  font-family: "Zen Kaku Gothic Antique", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
+
+.project:hover .overlay {
+  opacity: 1;
 }
-.content2 {
-  position: relative;
-  top: 150px;
-  height: 1200px;
-  background-color: #ffffff;
+
+.project:hover img {
+  transform: scale(1.1);
 }
-.imagine3 {
-  position: absolute;
-  top: 260px;
-  right: 0;
-  width: 1670px;
-  height: 700px;
-  background-color: #f7f7f7;
-  z-index: 0;
+
+.team-member img {
+  width: 125px;
+  height: 125px;
+  border-radius: 100px;
 }
-.bill-img {
-  position: absolute;
-  left: 420px;
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.zimusyo2-img {
-  position: absolute;
-  left: 820px;
+
+.social-icons a {
+  width: 34px;
+  height: 34px;
+  background-color: var(--primary);
+  border: 2px solid var(--primary);
+  color: #fff;
+  /* iのアイコンをaの中で中央揃えしてるみたい。
+  １つの要素に対して中央に寄せるときに親要素に
+  flexを付ける場合もある。 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  margin-left: 5px;
+  transition: all 0.4s ease;
 }
-.zimusyo1-img {
-  position: absolute;
-  left: 1220px;
+
+.social-icons a:hover {
+  color: var(--primary);
+  background-color: transparent;
 }
-.name1-img {
-  position: absolute;
-  left: 20px;
+
+form input.form-control {
+  height: 56px;
 }
-.overview-title {
-  position: relative;
-  top: 200px;
-  left: 770px;
-  color: #3f3f3f;
-  font-size: 120px;
-  transform: rotate(0.05deg);
-  font-family: "Zen Kaku Gothic Antique", sans-serif;
-  font-weight: 900;
-  font-style: normal;
+
+form .form-control {
+  border: transparent;
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0.04);
 }
-.overview-title::after {
-  content: '';
-  width: 800px;
-  height: 2px;
-  display: inline-block;
-  background-color: #000080;
-  position: absolute;
-  top: 165px;
-  left: 30px;
+
+.footer-top {
+  padding-bottom: 40px;
+  padding: 40px;
+  background-color: var(--dark);
 }
-.sub-ov-title {
-  position: absolute;
-  top: 280px;
-  left: 630px;
-  color: #3f3f3f;
-  font-size: 22px;
-  transform: rotate(0.05deg);
-  font-family: "Zen Kaku Gothic Antique", sans-serif;
-  font-weight: 900;
-  font-style: normal;
+
+.footer-top a {
+  color: var(--body);
 }
-.overview-item1 {
-  position: absolute;
-  bottom: 390px;
-  left: 70px;
-}
-.overview-item-text1 {
-  position: absolute;
-  bottom: 390px;
-  left: 120px;
-}
-.overview-item2 {
-  position: absolute;
-  bottom: 390px;
-  left: 500px;
-}
-.overview-item-text2 {
-  position: absolute;
-  bottom: 350px;
-  left: 500px;
-}
-.overview-item3 {
-  position: absolute;
-  bottom: 360px;
-  left: 50px;
-}
-.overview-item-text3 {
-  position: absolute;
-  bottom: 360px;
-  left: 120px;
-}
-.overview-item4 {
-  position: absolute;
-  bottom: 390px;
-  left: 1300px;
-}
-.overview-item-text4 {
-  position: absolute;
-  bottom: 365px;
-  left: 1300px;
-}
-.overview-item5 {
-  position: absolute;
-  bottom: 390px;
-  left: 890px;
-}
-.overview-item-text5 {
-  position: absolute;
-  bottom: 350px;
-  left: 890px;
-}
-.main3 {
-  height: 800px;
-  position: relative;
-  top: 1000px;
-}
-.imagine4 {
-  position: absolute;
-  left: 200px;
-  top: 75px;
-  height: 600px;
-  width: 1500px;
-  background-color: #f7f7f7;
-}
-.t {
-  width: 240px;
-  height: auto;
-}
-.access-title {
-  color: #3f3f3f;
-  text-align: center;
-  font-size: 120px;
-  font-family: "Zen Kaku Gothic Antique", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-.access-title::after {
-  content: '';
-  width: 400px;
-  height: 2px;
-  display: inline-block;
-  background-color: #000080;
-  position: absolute;
-  bottom: -40px;
-  left: calc(50% - 200px)
-}
-.sub-ac-title {
-  position: absolute;
-  top: 85px;
-  left: 650px;
-  color: #3f3f3f;
-  font-size: 22px;
-  transform: rotate(0.05deg);
-  font-family: "Zen Kaku Gothic Antique", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-.map {
-  position: absolute;
-  top: 260px;
-  left: 1100px;
-  height: 350px;
-  width: 540px;
-}
-.access-item1 {
-  position: absolute;
-  top: 280px;
-  left: 500px;
-}
-.access-item-text1 {
-  position: absolute;
-  top: 312px;
-  left: 500px;
-}
-.access-item2 {
-  position: absolute;
-  top: 380px;
-  left: 500px;
-}
-.access-item-text2 {
-  position: absolute;
-  top: 412px;
-  left: 500px;
-}
-.access-item-text3 {
-  position: absolute;
-  top: 510px;
-  left: 520px;
-}
-.fa-train-subway {
-  position: absolute;
-  top: 512px;
-  left: 500px;
-}
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: #1a1919;
-  text-align: center;
-  padding: 26px 0;
-}
-footer p {
-  color: #ffffff;
-  font-size: 0.875rem;
+
+.footer-top a:hover {
+  color: #fff;
 }
