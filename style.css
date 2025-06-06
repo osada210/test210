@@ -1,0 +1,343 @@
+@charset "UTF-8";
+
+@media (max-width: 600px) {
+  .l {
+    padding: 1rem 1rem;
+  }
+  .logo {
+    font-family: "Klee One", cursive;
+    font-weight: 600;
+    font-size: 23px;
+    font-style: normal;
+    color: #494949;
+  }
+
+  .logo-e {
+    position: absolute;
+    left: 3.3rem;
+    padding-top: 0.1rem;
+    font-size: 13px;
+    font-style: normal;
+    color: #494949;
+  }
+
+  .phone {
+    display: none;
+  }
+
+  .img-frame {
+    position: relative;
+    top: 1rem;
+    height: 14rem;
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+
+  .hoge {
+    position: relative;
+    display: inline-block; /* または block */
+    width: 100%;
+    margin-top: 3rem;
+  }
+  
+  .hoge::after {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: 0;
+    height: 1.2px;
+    background: linear-gradient(
+      to right,
+      #44bcc5 0%,
+      #44bcc5 35%,
+      #cccccc 35%,
+      #cccccc 100%
+    );
+    border-radius: 1px;
+  }
+
+  .hogee {
+    position: relative;
+    display: inline-block; /* または block */
+    width: 100%;
+    margin-top: 3rem;
+  }
+  
+  .hogee::after {
+    content: "";
+    position: absolute;
+    top: 1rem;
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: 0;
+    height: 1.2px;
+    background: linear-gradient(
+      to right,
+      #cccccc 0%,
+      #cccccc 65%,
+      #44bcc5 65%,
+      #44bcc5 100%
+    );
+    border-radius: 1px;
+  }
+
+
+  .img-01{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('akusyu5.jpg');
+    background-size: cover;
+ }
+
+  .msg {
+    position: absolute;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    z-index: 10;
+  }
+
+  .msg-01 {
+    top: 45%;
+    left: 7%;
+    font-size: 28px;
+  }
+
+  .msg-02 {
+    top: 64%;
+    left: 18%;
+    font-size: 12px;
+  }
+
+  .msg-03 {
+    top: 72%;
+    left: 12%;
+    font-size: 12px;
+  }
+
+  .img-frame::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+ }
+
+  .menu-btn {
+    position: absolute;
+    top: 0.7rem;
+    right: 1.1rem;
+    display: flex;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+  }
+  .menu-btn span,
+  .menu-btn span:before,
+  .menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #000000;
+    position: absolute;
+  }
+  .menu-btn span:before {
+    bottom: 8px;
+  }
+  .menu-btn span:after {
+    top: 8px;
+  }
+
+  #menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+  }
+  #menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+  #menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+
+  #menu-btn-check {
+    display: none;
+  }
+
+  .menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 80;
+    background-color: #3584bb;
+  }
+  .menu-content ul {
+    padding: 70px 10px 0;
+  }
+  .menu-content ul li {
+    border-bottom: solid 1px #ffffff;
+    list-style: none;
+  }
+  .menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
+  }
+  .menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+  }
+
+  .menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;/*leftの値を変更してメニューを画面外へ*/
+    z-index: 80;
+    background-color: #3584bb;
+    transition: all 0.5s;/*アニメーション設定*/
+  }
+  #menu-btn-check:checked ~ .menu-content {
+    left: 0;/*メニューを画面内へ*/
+  }
+
+  .nv {
+    display: none;
+  }
+
+  .overview-title {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    color: #3f3f3f;
+    font-size: 40px;
+    transform: rotate(0.05deg);
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  .sub-ov-title {
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    color: #3f3f3f;
+    font-size: 18px;
+    transform: rotate(0.05deg);
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    padding-bottom: 1.5rem;
+  
+  }
+
+  .access-title {
+    padding-top: 1rem;
+    text-align: center;
+    color: #3f3f3f;
+    font-size: 40px;
+    transform: rotate(0.05deg);
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  .sub-ac-title{
+    padding-top: 0.5rem;
+    text-align: center;
+    color: #3f3f3f;
+    font-size: 18px;
+    transform: rotate(0.05deg);
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    padding-bottom: 1.5rem;
+  }
+
+  .m {
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+    color: #3f3f3f;
+  }
+
+  .n {
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    padding-left: 1rem;
+    padding-top: 1.5rem;
+  }
+
+  .content2::after {
+    content: "";
+    background-color: #f5f5f5;
+    width: 90%;
+    height: 36%;
+    position: absolute;
+    top: 28rem;
+    left: 1rem;
+    z-index: -1;
+  }
+
+  .content3 {
+    display: flex;
+  }
+
+  .overview-item-text2, .overview-item-text3, .overview-item-text4, .overview-item-text5 {
+    padding-left: 2rem;
+  }
+
+  .main3 {
+    padding-top: 2rem;
+  }
+
+  .map {
+    width: 90%;
+    height: 300px;
+    padding-left: 1rem;
+  }
+
+  .access-item-text0, .access-item-text1, .access-item-text2, .access-item-text3 {
+    padding-top: 0.5rem;
+    padding-left: 2rem;
+  }
+
+  footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #1a1919;
+    text-align: center;
+    padding: 26px 0;
+    margin-top: 3rem;
+  }
+  footer p {
+    color: #ffffff;
+    font-size: 0.875rem;
+  }
+}
