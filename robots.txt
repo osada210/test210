@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://osada210.github.io/test210/sitemap.xml 
